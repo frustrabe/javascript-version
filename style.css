@@ -1,0 +1,149 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  --clr-black: #222;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--ff-secondary);
+  background: var(--clr-grey-10);
+  color: var(--light-shadow);
+  background-color: #f6f9fc;
+}
+
+span {
+  display: block;
+  width: 90%; /*or whatever width you want the effect of <hr>*/
+  border-top: 1px solid lightgray;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--ff-secondary);
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 0.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  h3 {
+    font-size: 0.7rem;
+  }
+  h4 {
+    font-size: 0.7rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+}
+/*  global classes */
+
+.component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+  height: 50%;
+  width: 20%;
+  background-color: white;
+  border-style: solid;
+  border-color: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0.1, 0.1, 0.1);
+}
+
+title {
+  font-weight: bold;
+}
+.matching-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h4#numbers {
+  background-color: transparent;
+  border-style: solid;
+  border-color: grey;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+button.random-btn {
+  display: flex;
+  justify-self: center;
+  border-style: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding-top: 3px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 3px;
+  color: white;
+  background-color: #5e71e4;
+  height: 70%;
+  cursor: pointer;
+}
+
+button {
+  display: flex;
+  justify-self: center;
+  border-color: #5e71e4;
+  border-width: 1px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding-top: 3px;
+  padding-left: 50px;
+  padding-right: 42px;
+  padding-bottom: 3px;
+  color: #5e71e4;
+  background-color: white;
+  height: 70%;
+  cursor: pointer;
+}
+
+.results {
+  display: flex;
+  justify-content: center;
+}
