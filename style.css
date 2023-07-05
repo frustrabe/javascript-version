@@ -52,6 +52,8 @@ h2,
 h3,
 h4 {
   font-family: var(--ff-secondary);
+  margin-bottom: 3%;
+  color: darkslategrey;
 }
 
 h3 {
@@ -64,13 +66,15 @@ h4 {
 
 @media screen and (min-width: 800px) {
   h3 {
-    font-size: 0.8rem;
+    font-size: large;
+    margin-bottom: 3%;
   }
   h4 {
     font-size: 0.8rem;
   }
   body {
     font-size: 1rem;
+    background: darkslategray;
   }
 }
 /*  global classes */
@@ -83,10 +87,12 @@ h4 {
   height: 50%;
   width: 20%;
   background-color: white;
-  border-style: solid;
-  border-color: white;
+  border-style: none;
+  /* border-color: white; */
+
   border-radius: 5px;
   box-shadow: 5px 5px 10px 2px rgba(0, 0.1, 0.1, 0.1);
+  background: darkgray;
 }
 
 title {
@@ -99,7 +105,10 @@ title {
 }
 
 h4#numbers {
-  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
   border-style: solid;
   border-color: grey;
   border-radius: 5px;
@@ -116,13 +125,14 @@ h4#numbers {
   /* align-content: center; */
   justify-content: center;
   width: 105%;
-  height: 45px;
+  height: 55px;
 }
 
-button.random-btn {
+.random-btn {
   display: flex;
   justify-self: center;
-  border-style: none;
+  border-style: solid;
+  border-color: #f6f9fc;
   border-radius: 5px;
   margin-bottom: 10px;
   padding-top: 3px;
@@ -130,15 +140,25 @@ button.random-btn {
   padding-right: 50px;
   padding-bottom: 3px;
   color: white;
-  background-color: #5e71e4;
+  /* background-color: #5e71e4; */
+  background-color: darkslategray;
   height: 70%;
   cursor: pointer;
 }
 
+.combinations-btn {
+  border-style: solid;
+  border-color: #f6f9fc;
+  color: white;
+  background-color: darkslategray;
+  padding-left: 47px;
+  padding-right: 47px;
+}
+
 button {
   display: flex;
-  justify-self: center;
-  border-color: #5e71e4;
+  /* border-color: #5e71e4; */
+  border-color: darkslategray;
   border-width: 1px;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -146,7 +166,8 @@ button {
   padding-left: 50px;
   padding-right: 42px;
   padding-bottom: 3px;
-  color: #5e71e4;
+  /* color: #5e71e4 */
+  color: darkslategray;
   background-color: white;
   height: 70%;
   cursor: pointer;
@@ -155,4 +176,5 @@ button {
 .results {
   display: flex;
   justify-content: center;
+  margin-bottom: 7%;
 }
