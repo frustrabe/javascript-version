@@ -41,7 +41,7 @@ in its seperate div with a bullet point in front. Lastly we join our results in 
 string as a separator and we set it as the innerHTML of the HTML element h4Combinations and call for the displayRandomNumbers function. */
 function findCombinationsClick() {
   const combinations = [];
-  const error = "Viable combinations were not found, try again!";
+  const error = "No viable combinations found, try again!";
 
   randomNumbers.forEach((number, index) => {
     randomNumbers.slice(index + 1).forEach((nextNumber, nextIndex) => {
