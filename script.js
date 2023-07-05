@@ -6,8 +6,7 @@ const combinationsButton = document.querySelector(".combinations-btn");
 
 // TASK 1
 
-// Generating 8 random numbers using Array.from() method to create an array.
-const randomNumbers = Array.from({ length: 8 }, () => calcRandomNumber(1, 10));
+let randomNumbers = [];
 
 // Function to calculate a randomised number
 function calcRandomNumber(min, max) {
@@ -22,13 +21,9 @@ function displayRandomNumbers() {
   h1Numbers.textContent = indexWithRandomNumbers;
 }
 
-/*  Function that iterates over randomNumbers array using forEach loop, generates
- new random number in the range 1 - 20 for each element, updates the array with the new values
-and calls for the displayRandomNumbers() function to show the updated numbers*/
+/* */
 function randomiseClick() {
-  randomNumbers.forEach((item, index) => {
-    randomNumbers[index] = calcRandomNumber(1, 20);
-  });
+  randomNumbers = Array.from({ length: 8 }, () => calcRandomNumber(1, 20));
   displayRandomNumbers();
 }
 

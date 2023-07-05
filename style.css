@@ -63,10 +63,10 @@ h4 {
 
 @media screen and (min-width: 800px) {
   h3 {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   h4 {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   body {
     font-size: 1rem;
@@ -108,6 +108,14 @@ h4#numbers {
   margin-left: 5px;
   width: 100%;
   text-align: center;
+}
+
+.numbers {
+  display: flex;
+  /* align-content: center; */
+  justify-content: center;
+  width: 105%;
+  height: 45px;
 }
 
 button.random-btn {
